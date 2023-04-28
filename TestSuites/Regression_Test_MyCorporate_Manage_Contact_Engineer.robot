@@ -1,9 +1,10 @@
 *** Settings ***
 Metadata         Version 1.0.0
-Resource        ../../taas-at-fine-esd-ccis/Resources/Repository/MyCorporate_Common_Repository.robot
-Resource        ../../taas-at-fine-esd-ccis/Resources/Variables/MyCorporate_Common_TestData.robot
-Resource        ../../taas-at-fine-esd-ccis/Resources/Variables/MyCorporate_Common_Variables.robot
-Resource        ../../taas-at-fine-esd-ccis/Resources/Keywords/MyCorporate_Common_Keywords.robot
+
+Resource        ../Resources/Keywords/MyCorporate_Common_Keywords.robot
+Resource        ../Resources/Repository/MyCorporate_Common_Repository.robot
+Resource        ../Resources/Variables/MyCorporate_Common_TestData.robot
+Resource        ../Resources/Variables/MyCorporate_Common_Variables.robot
 # Test Teardown       Close All Browsers
 
 *** Test Cases ***
@@ -16,9 +17,9 @@ ManageContactEngineer_tanak13092022_001
         ...     Manage Contact Engineer ${\n}
 
         ...     TEST STEPS: 
-        ...     1. เข้าใช้งานที่ URL: https://test-mycorporate.ais.co.th/Portal/Employee
-        ...     2. กรอก Username : chanawam
-        ...     3. กรอก Password : chanawam
+        ...     1. เข้าใช้งานที่ URL:   # url test system
+        ...     2. กรอก Username : ********
+        ...     3. กรอก Password : ********
         ...     4. ทำเครื่องหมาย "☑" บน Google reCAPTCHA
         ...     5. คลิกปุ่ม ตกลง
         ...     6. เลือกเมนูด้านซ้าย "Contact Management"
@@ -261,7 +262,7 @@ ManageContactEngineer_tanak13092022_009
         ...     Manage Contact Engineer ${\n}
 
         ...     TEST STEPS: 
-        ...     1. Login ด้วย User/Pass : "chanawam/chanawam" 
+        ...     1. Login ด้วย User/Pass : "******/******" 
         ...     2. เลือกเมนูด้านซ้าย "Contact Management"
         ...     3. เลือกเมนูย่อยเป็น "Manage Contact"
         ...     4. ระบุ Account : "แสตนฟอร์ด"
@@ -339,7 +340,7 @@ ManageContactEngineer_tanak13092022_011
 
         ...     TEST STEPS: 
         ...     --- กรณี User มีมากกว่า 1 Role ---
-        ...     1. Login ด้วย User/Pass : "chanawam/chanawam" 
+        ...     1. Login ด้วย User/Pass : "******/******" 
         ...     2. เลือกเมนูด้านซ้าย "Contact Management"
         ...     3. เลือกเมนูย่อยเป็น "Manage Contact"
         ...     4. ระบุ Account : "แสตนฟอร์ด"
@@ -348,7 +349,7 @@ ManageContactEngineer_tanak13092022_011
         ...     7. ตรวจสอบ Panel : Feature
         ...     
         ...     --- กรณี User มีเพียง Role Engineer ---
-        ...     1. Login ด้วย User/Pass : "pattawee/pattawee"
+        ...     1. Login ด้วย User/Pass : "******/******"
         ...     2. เลือกเมนูด้านซ้าย "Contact Management"
         ...     3. เลือกเมนูย่อยเป็น "Manage Contact"
         ...     4. ระบุ Account : "แสตนฟอร์ด"

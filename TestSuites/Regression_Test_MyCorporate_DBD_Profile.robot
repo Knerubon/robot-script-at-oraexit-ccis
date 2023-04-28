@@ -1,24 +1,25 @@
 *** Settings ***
 Documentation   Regression_Test_MyCorporate_DBD_Profile
 Metadata        Version 1.0.0
-Resource        ../../taas-at-fine-esd-ccis/Resources/Repository/MyCorporate_Common_Repository.robot
-Resource        ../../taas-at-fine-esd-ccis/Resources/Variables/MyCorporate_Common_TestData.robot
-Resource        ../../taas-at-fine-esd-ccis/Resources/Variables/MyCorporate_Common_Variables.robot
-Resource        ../../taas-at-fine-esd-ccis/Resources/Keywords/MyCorporate_Common_Keywords.robot
-# Library         Selenium2Library
-# Library         XML
+
+Resource        ../Resources/Keywords/MyCorporate_Common_Keywords.robot
+Resource        ../Resources/Repository/MyCorporate_Common_Repository.robot
+Resource        ../Resources/Variables/MyCorporate_Common_TestData.robot
+Resource        ../Resources/Variables/MyCorporate_Common_Variables.robot
+
 # Test Teardown       Close All Browsers
 
 *** Test Cases ***
+
 MyCorporate_DBDProfile_pattp070121001_001
         [Tags]      pattp070121001_001
         [Documentation]
         ...     TEST DESCRIPTION:    
         ...     MyCorporate - DBD Profile 
         ...     TEST STEPS: 
-        ...     1. เข้าใช้งานที่ URL: https://test-mycorporate.ais.co.th/Portal/Employee   #R1_Regression Test MyCorporate - DBD Profile
-        ...     2. กรอก Username : ""chanawam""
-        ...     3. กรอก Password : ""chanawam"" 
+        ...     1. เข้าใช้งานที่ URL:  # url test   #R1_Regression Test MyCorporate - DBD Profile
+        ...     2. กรอก Username : ""********""
+        ...     3. กรอก Password : ""********""
         ...     4. ทำเครื่องหมาย ""☑"" บน Google reCAPTCHA > Skip 
         ...     5. คลิกปุ่ม ตกลง 
         ...     6. เลือกเมนูด้านซ้าย ""DBD"" 
