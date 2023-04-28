@@ -1,0 +1,1 @@
+robot -d ../Result/Test_ALL ../TestSuites/*.robot
